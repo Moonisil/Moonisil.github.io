@@ -271,7 +271,7 @@ function createMenu() {
                 var categoryItem = `
                     
                     <div class="category-item" data-name = ${encodedName} data-cost = ${menu.cost} data-image = ${menu.image}>
-                        <img src=assets/${menu.image} alt="">
+                        <img src= /Moonisil.github.io/assets/${menu.image} alt="">
                         <div class="info-text">
                             <h2>${menu.name}</h2>
                             <h2><strong>${menu.cost}$</strong></h2>
