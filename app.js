@@ -338,6 +338,7 @@ $(document).on('click', '.decrese', function () {
     var count = parseInt($(this).parent().find('.count').text());
     if (count == 1) {
         $(this).parent().parent().remove();
+        $(".total-count").text(parseInt($(".total-count").text()) - parseInt($(this).parent().parent().data('cost')) + " $");
     } else {
         $(this).parent().find('.count').text(count - 1);
         $(this).parent().parent().find('.item-info > h2 > strong').text(count - 1 + 'x');
