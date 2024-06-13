@@ -269,7 +269,6 @@ function createMenu() {
             if (menu.category == key) {
                 var encodedName = menu.name.replace(/\s+/g, '-');
                 var categoryItem = `
-                    
                     <div class="category-item" data-name = ${encodedName} data-cost = ${menu.cost} data-image = ${menu.image}>
                         <img src=assets/${menu.image} alt="">
                         <div class="info-text">
@@ -280,7 +279,6 @@ function createMenu() {
                             <p>Add To Basket</p>
                         </div>
                     </div>
-                
             `;
                 contentCategory += categoryItem; // Öğeyi kategoriye ekler
                 //console.log(menu.name, menu.category);
@@ -394,4 +392,16 @@ $(document).on('click', '.coppy-order-btn', function () {
     }).catch(function(err) {
         console.error('Could not copy text: ', err);
     });
+});
+
+$(document).on('click', '.dark-mode', function () {
+    $(".mainbody").toggleClass('dark');
+    $(".basket-container").toggleClass('dark');
+    $(".header").toggleClass('dark');
+    $(".category-item").toggleClass('dark-item');
+    $(".basket-cantainer").toggleClass('dark-order');
+    $(".content-category").toggleClass('dark-content-category');
+    $(".text").toggleClass('dark-text');
+    //$(".item-info").toggleClass('dark-text');
+    console.log('Dark mode activated');
 });
