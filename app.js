@@ -43,7 +43,7 @@ Menus = [
         "name": "Fourth of July Meal",
         "cost": 175,
         "category": 1,
-        "image": "PawcakesCombo.png"
+        "image": "FourthofJulyMeal.png"
     },
     {
         "name": "Bandit Combo",
